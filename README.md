@@ -2,7 +2,7 @@
 Giphy API and JavaScript/jQuery
 
 ## Live Link
- - https://www.yoonslee.github.io/HW6-GifTastic/
+ - yoonslee.github.io/HW6-GifTastic/
 
 ## Requirements
 - Generate a set of buttons based on an array of related strings
