@@ -45,7 +45,7 @@ $("#add-babe-button").on("click", function(e) {
 	$("#new-babe-input").val("");
 });
 
-$(".babe-button").on("click", function() {
+$(document).on("click", ".babe-button", function() {
 	var babe = $(this).attr("data-babe");
 	var queryURL = "http://api.giphy.com/v1/gifs/search?q=" +
         babe + "&api_key=dc6zaTOxFJmzC&limit=10";
@@ -83,7 +83,6 @@ $(".babe-button").on("click", function() {
 });
 
 $(document).on("click", ".result", function() {
-	console.log("click result");
 	var state = $(this).attr("data-state");
 
 	if(state === "still") {
