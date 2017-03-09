@@ -55,7 +55,7 @@ $(document).on("click", ".babe-button", function() {
     	method: "GET"
     }).done(function(response) {
     	var results = response.data;
-    	console.log(results);
+    	// console.log(results);
 
 		var resultsContainerSection = $("<section class='results-container'>");
 
