@@ -57,9 +57,11 @@ $(".babe-button").on("click", function() {
     	var results = response.data;
     	console.log(results);
 
-    	for(var i = 0; i < results.length; i++) {
-    		var babeDiv = $("<div class='result-container'>");
+		var resultsContainerSection = $("<section class='results-container'>");
 
+    	for(var i = 0; i < results.length; i++) {
+    		var singleResultDiv = $("<div class='result-container'>");
+    		
     		var rating = results[i].rating;
 
     		var p = $("<p>").text("Rating: " + rating);
@@ -70,11 +72,13 @@ $(".babe-button").on("click", function() {
     		babeImg.attr("data-still", results[i].images.fixed_height_still.url);
     		babeImg.attr("data-animate", results[i].images.fixed_height.url);
 
-    		babeDiv.prepend(babeImg);
-    		babeDiv.prepend(p);
+    		singleResultDiv.prepend(babeImg);
+    		singleResultDiv.prepend(p);
 
-    		$("#babes-group").prepend(babeDiv);
+    		resultsContainerSection.prepend(singleResultDiv);
     	}
+
+    	$("#babes-group").prepend(resultsContainerSection);
     });
 });
 

@@ -1,3 +1,9 @@
+.results-container {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 0 0 30px;
+}
+
 .result-container {
-	float: left;
+	margin: 30px 30px 0 0;
 }
