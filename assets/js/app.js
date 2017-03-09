@@ -47,7 +47,7 @@ $("#add-babe-button").on("click", function(e) {
 
 $(document).on("click", ".babe-button", function() {
 	var babe = $(this).attr("data-babe");
-	var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
+	var queryURL = "http://api.giphy.com/v1/gifs/search?q=" +
         babe + "&api_key=dc6zaTOxFJmzC&limit=10";
 
     $.ajax({
